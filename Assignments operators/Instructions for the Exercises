@@ -1,0 +1,19 @@
+5) Write a program that displays the sum of the two integers entered by the user.
+
+6) Write a program that displays the average of the two numerical values entered by the user.
+
+8)  Write a program that reverses the order of the values of three integer variables.
+    If the variables initially have the values 1, 2, and 3, they should end up with the values 3, 2, and 1.
+
+10) Write a program that performs a cyclic right shift of the values of four variables.
+    The effect of such a permutation is as follows: if the four variables initially contain the values 1, 2, 3, 4,
+    then after the permutation they should contain the values 4, 1, 2, 3, respectively.
+
+11) Write a program that performs a cyclic left shift of the values of four variables. For example, 1, 2, 3, 4 becomes 2, 3, 4, 1.
+
+12) Write a program that calculates the duration of a given event.
+    Your program must receive as input the start time of the event (hours and minutes) and the end time of the event (also hours and minutes).
+    The program should then calculate and display the duration (the elapsed time between the start and the end) of the event.
+    Assume that both times occur on the same day. Can you express this duration in hours and minutes?
+
+13) Write a program that calculates and displays the sum of four numbers entered by the user. Your program may use only one numeric variable.
