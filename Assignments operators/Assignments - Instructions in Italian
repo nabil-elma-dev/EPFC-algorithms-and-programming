@@ -1,0 +1,19 @@
+5) Scrivere un programma che visualizzi la somma dei due numeri interi inseriti dall'utente.
+
+6) Scrivere un programma che visualizzi la media dei due valori numerici inseriti dall'utente.
+
+8)  Scrivere un programma che inverta l'ordine dei valori di tre variabili intere.
+    Se inizialmente le variabili hanno i valori 1, 2 e 3, alla fine dovranno avere i valori 3, 2 e 1.
+
+10) Scrivere un programma che esegua una permutazione ciclica verso destra dei valori di quattro variabili.
+    L'effetto di tale permutazione è il seguente: se inizialmente le quattro variabili contengono i valori 1, 2, 3 e 4,
+    al termine dovranno contenere rispettivamente i valori 4, 1, 2 e 3.
+
+11) Scrivere un programma che esegua una permutazione ciclica verso sinistra dei valori di quattro variabili. Ad esempio, 1, 2, 3, 4 diventa 2, 3, 4, 1.
+
+12) Scrivere un programma che calcoli la durata di un determinato evento.
+    Il programma deve ricevere in input l'ora di inizio dell'evento (ore e minuti) e l'ora di fine dell'evento (anch'essa espressa in ore e minuti).
+    Il programma deve quindi calcolare e visualizzare la durata (il tempo trascorso tra l'inizio e la fine) dell'evento.
+    Si supponga che i due istanti appartengano alla stessa giornata. È possibile esprimere tale durata in ore e minuti?
+
+13) Scrivere un programma che calcoli e visualizzi la somma di quattro numeri inseriti dall'utente. Il programma può utilizzare una sola variabile numerica.
