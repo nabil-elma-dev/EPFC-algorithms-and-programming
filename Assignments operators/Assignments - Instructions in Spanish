@@ -1,0 +1,45 @@
+1) ¿Qué muestran los siguientes programas (ver Assignements - Instructions in French.pdf)?
+
+2) ¿Qué hacen los siguientes programas (ver Assignements - Instructions in French.pdf) cuando los valores son 2 y 6?
+
+3) ¿Qué hacen los siguientes programas (ver Assignements - Instructions in French.pdf)? Por ejemplo, si el usuario introduce los valores 2 y 5.
+
+4) Complete el siguiente programa para que los valores mostrados sean los introducidos por el usuario, pero en orden inverso
+   (si el usuario introduce 5 y 7, el ordenador muestra 7 y 5).
+
+    public static void main(String[] args) {
+        int a, b;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Introduzca 2 valores enteros");
+        a = scan.nextInt();
+        b = scan.nextInt();
+
+        TODO: COMPLETAR EL CÓDIGO
+
+        System.out.print("Aquí están invertidos: ");
+        System.out.print(a);
+        System.out.print(" ");
+        System.out.println(b);
+    }
+5) Escriba un programa que muestre la suma de los dos números enteros introducidos por el usuario.
+
+6) Escriba un programa que muestre el promedio de los dos valores numéricos introducidos por el usuario.
+
+7) ¿Qué hace el programa (ver ex_7.java)? Pruébelo con los valores 5 y 7.
+
+8) Escriba un programa que invierta el orden de los valores de tres variables enteras.
+   Si inicialmente las variables tienen los valores 1, 2 y 3, deberán terminar con los valores 3, 2 y 1.
+
+10) Escriba un programa que realice una rotación cíclica hacia la derecha de los valores de cuatro variables.
+    El efecto de esta permutación es el siguiente: si las cuatro variables contienen inicialmente los valores 1, 2, 3 y 4,
+    después de la permutación deberán contener respectivamente los valores 4, 1, 2 y 3.
+
+11) Escriba un programa que realice una rotación cíclica hacia la izquierda de los valores de cuatro variables.
+    Por ejemplo, 1, 2, 3 y 4 se convierten en 2, 3, 4 y 1.
+
+12) Escriba un programa que calcule la duración de un evento determinado.
+    Su programa debe recibir como entrada la hora de inicio del evento (horas y minutos) y la hora de finalización del evento (también horas y minutos).
+    A continuación, el programa debe calcular y mostrar la duración (el tiempo transcurrido entre el inicio y el final) del evento.
+    Suponga que ambas horas corresponden al mismo día. ¿Puede expresar esta duración en horas y minutos?
+
+13) Escriba un programa que calcule y muestre la suma de cuatro números introducidos por el usuario. Su programa solo puede utilizar una variable numérica.

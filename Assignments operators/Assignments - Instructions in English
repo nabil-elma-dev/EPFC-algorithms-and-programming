@@ -1,6 +1,32 @@
+1) What do the programs (see Assignements - Instructions in French.pdf) display? (The header lines and braces may be omitted.)
+
+2) What do the programs  (see Assignements - Instructions in French.pdf) do when they are given the values 2 and 6?
+
+3) What do the programs (see Assignements - Instructions in French.pdf) do? For example, if the user enters the values 2 and 5.
+
+4) Complete the following program so that the values displayed are the ones entered by the user, but in reverse order
+   (if the user enters 5 and 7, the computer displays 7 and 5).
+
+    public static void main(String[] args) {
+     int a, b;
+     Scanner scan = new Scanner(System.in);
+     System.out.println("Entrer 2 valeurs entières");
+     a = scan.nextInt();
+     b = scan.nextInt();
+
+     TODO: FILL THE GAP
+
+     System.out.print("Les voici inversées: ");
+     System.out.print(a);
+     System.out.print(" ");
+     System.out.println(b);
+    }
+
 5) Write a program that displays the sum of the two integers entered by the user.
 
 6) Write a program that displays the average of the two numerical values entered by the user.
+
+7) What does the program do (see ex_7.java)? Try it with the values 5 and 7.
 
 8)  Write a program that reverses the order of the values of three integer variables.
     If the variables initially have the values 1, 2, and 3, they should end up with the values 3, 2, and 1.

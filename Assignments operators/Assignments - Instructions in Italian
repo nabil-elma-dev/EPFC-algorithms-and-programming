@@ -1,6 +1,31 @@
+1) Che cosa fanno i programmi (vedi Assignements - Instructions in French.pdf)? (Le righe di intestazione e le parentesi graffe possono essere omesse.)
+
+2) Che cosa fanno i programmi (vedi Assignements - Instructions in French.pdf) quando vengono forniti i valori 2 e 6?
+
+3)Che cosa fanno i programmi (vedi Assignements - Instructions in French.pdf)? Ad esempio, se l'utente inserisce i valori 2 e 5.
+
+4)  Completa il seguente programma in modo che i valori visualizzati siano quelli inseriti dall'utente,
+    ma in ordine inverso (se l'utente inserisce 5 e 7, il computer visualizza 7 e 5):
+    public static void main(String[] args) {
+        int a, b;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Entrer 2 valeurs entières");
+        a = scan.nextInt();
+        b = scan.nextInt();
+
+        TODO: riempire qui
+
+        System.out.print("Les voici inversées: ");
+        System.out.print(a);
+        System.out.print(" ");
+        System.out.println(b);
+    }
+
 5) Scrivere un programma che visualizzi la somma dei due numeri interi inseriti dall'utente.
 
 6) Scrivere un programma che visualizzi la media dei due valori numerici inseriti dall'utente.
+
+7) Che cosa fa il programma (leggere il codice all'interno di ex_7.java)? Provalo con i valori 5 e 7.
 
 8)  Scrivere un programma che inverta l'ordine dei valori di tre variabili intere.
     Se inizialmente le variabili hanno i valori 1, 2 e 3, alla fine dovranno avere i valori 3, 2 e 1.
