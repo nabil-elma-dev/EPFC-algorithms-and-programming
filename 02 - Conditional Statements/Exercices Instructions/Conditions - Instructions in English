@@ -1,0 +1,54 @@
+1) What do the programs do (see code in "Conditions - Instructions in French.pdf")?
+   Analyze the situations in which the user would enter the values (the header lines and braces may be omitted).
+
+2) What do the programs do (see code in "Conditions - Instructions in French.pdf")?
+   Explain using a few boundary cases for the entered values.
+   Can you simplify them (write a simpler program that does the same thing)?
+
+3) Write a program that calculates the absolute value of a number.
+   Reminder: the absolute value of a number is the number itself if it is positive or zero, and its opposite (same number with the sign changed) if it is negative.
+
+4) Write a program that receives two numbers, subtracts the smaller from the larger, and displays the result.
+
+5) Write a program that displays a message indicating the relative order of two numbers, in one of the following forms:
+    “The first number is greater than the second.”
+    “The two numbers are equal.”
+    “The first number is smaller than the second.”
+
+6) Write a program that checks whether a number is between 1 and 10 (inclusive).
+
+7) Add a comment to each line of the program (see code in "Conditions - Instructions in French.pdf") indicating, whenever possible, the value of all variables.
+
+8) Find the error(s) in the programs (see code in "Conditions - Instructions in French.pdf").
+
+9) Write a program that calculates the maximum of three numbers.
+
+10) Write a program that receives three numbers as input and displays them in ascending order.
+
+11) Write a program that receives three numbers as input and displays the two largest ones. Identify any special cases that may occur.
+
+12) Write a program that receives three numbers as input and, if two of them have the same value, displays that value (the program displays nothing otherwise).
+
+13) Write a program that displays the instant immediately following the current time.
+    The program receives the current time as hours and minutes and displays the time corresponding to the next minute (remember that one minute after 10:59 is 11:00!).
+    Assume everything happens on the same day (you do not need to check whether the current time is 23:59).
+
+14) Explain what the programs below do by adding, for each output statement, a comment indicating the condition that must be satisfied for that statement to be executed.
+    Notice how the absence of indentation can make reading difficult.
+
+15) Write the code fragment that, if a is greater than 0, checks whether a equals 1 and, in that case, displays “a equals 1”; otherwise, if a is not greater than 0, displays “a is less than or equal to 0”.
+
+16) Write a program that displays whether or not a year entered by the user is a leap year.
+Reminder: leap years are years divisible by 4 but not by 100, unless they are also divisible by 400. Thus, 2000 and 2008 are leap years, whereas 1900 is not.
+
+17) Display the sign of the product of two integers without performing the multiplication (using only comparisons). For example, the product of 5 and −7 is negative.
+
+18) Display the sign of the sum of two integers without performing the addition (using only comparisons and negations/sign changes). For example, if 5 and −7 are added, the result is negative.
+
+19) A vehicle rental company rents its vehicles under the following conditions:
+    - Daily flat rate: €250.
+    - The first 50 kilometers are free.
+    - The next 450 kilometers are charged at €1.25 per kilometer.
+    - Any additional kilometers are charged at €1.25 per kilometer plus a 10% surcharge.
+
+Calculate and display the amount to be paid for a rental of n days and x kilometers traveled, where n and x are entered by the user.
