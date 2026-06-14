@@ -1,0 +1,77 @@
+EXERCICE 1
+a)
+    1. a = 5, b = 5
+    sout: 10
+
+    2. a = 5, b = 2
+    sout: 7
+
+    3. a = 1, b = 0
+    sout: 3
+
+b)
+    1. a = 5, b = 5
+    sout: vivement mariée
+
+    2. a = 5, b = 2
+    sout: vive la mariée
+
+    3. a = 1, b = 0
+    sout: /
+
+EXERCICE 2
+a)
+    a <= 0 : Peu
+    a = 1  : Un
+    a > 1  : Beaucoup
+
+b)
+    a > 0 && b > 1: Bonjour
+    a > 0 && b <= 1: Salut
+    a <= 0 && b > 1: Coucou
+    a <= 0 && b <= 1: Salut
+
+EXERCICE 7
+    a = 2
+    b = 3
+    c = 4
+    test1 = true
+    test2 = (b >= a && c >= b) --> true
+    test3 = test1 || test2 --> true
+    arret = test3 && (!test2) --> false
+
+    a += 1 --> a == 3
+    b -= 1 --> b == 2
+    c -= 2 --> c == 2
+
+    test1 = true
+    test 2 = (b >= a && c >= b) --> false
+    test3 = test 1 || test 2 --> true
+    arret = arret || test2 --> false
+
+EXERCICE 8
+    a) "x = 0" instead of "x == 0" inside the "if" condition
+    b) "x < y < z" instead of "x < y && y < z" inside the "if" condition
+
+EXERCICE 14
+    a)
+    - sout 3 if a > 2
+    - sout 2 if a > 1 but not > 2
+    - sout 1 if a > 0 but not > 1
+    - sout "error" if a <= 0
+
+    b)
+    - sout 3 if a > 2
+    - sout 2 if a > 1
+    - sout 1 if a > 0
+    - else (a <= 0) "Erreur"
+
+    c)
+    - sout nothing if a < 0
+    - sout "C'est bien" if a > 0
+    - sout <<C'est "nul">> if a == 0
+
+    d)
+    - sout nothing if a == 0
+    - sout "C'est bien" if a > 0
+    - sout <<C'est "nul">> if a < 0
