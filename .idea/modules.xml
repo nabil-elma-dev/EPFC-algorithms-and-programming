@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/01 - Assignments Operators/01 - Assignments Operators.iml" filepath="$PROJECT_DIR$/01 - Assignments Operators/01 - Assignments Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Conditional statements/02 - Conditional statements.iml" filepath="$PROJECT_DIR$/02 - Conditional statements/02 - Conditional statements.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignments operators/Assignments operators.iml" filepath="$PROJECT_DIR$/Assignments operators/Assignments operators.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PRM3.iml" filepath="$PROJECT_DIR$/.idea/PRM3.iml" />
     </modules>
