@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ex_6 {
+    public static Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.print("How many numbers will be inserted? ");
+        int n = scan.nextInt();
+
+        while (n <= 0) {
+            System.out.println("Please insert a positive number!");
+            System.out.print("How many numbers will be inserted? ");
+            n = scan.nextInt();
+        }
+
+        int sum = 0;
+
+        for (int i = 0; i < n; ++i) {
+            System.out.print("Next number: ");
+            int next = scan.nextInt();
+            if (next > 0) {
+                sum += next;
+            }
+        }
+
+        System.out.println("Average: " + (double) sum / n);
+    }
+
+}
