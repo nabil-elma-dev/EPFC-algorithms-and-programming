@@ -1,0 +1,7 @@
+EXERCICE 1
+a) 8
+b) 2 4 8
+c) no loop
+d) infinite loop
+e) both odd and even number cases are treated; an odd number becomes an even one after k hops ((3a+1) / 2) and decreases in the next hop (a /= 2)
+f) both odd and even number cases are treated; an odd number will become an even one after k hops ((3a + 1) / 2)
