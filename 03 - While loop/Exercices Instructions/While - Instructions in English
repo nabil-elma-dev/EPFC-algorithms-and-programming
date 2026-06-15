@@ -1,0 +1,31 @@
+1) What do the programs do (see "While - Instructions in French.pdf"?
+
+2) Write a program that calculates the average of n numbers entered by the user.
+
+3) Rewrite the same program, but ensure that the user enters a strictly positive number for n.
+
+4) Write a program that finds the largest value of n such that the sum of the first n positive integers is less than a given number max.
+    Example:
+    If the user enters 20 → result is 5, because:
+
+    1 + 2 + 3 + 4 + 5 = 15 ✅
+    1 + 2 + 3 + 4 + 5 + 6 = 21 ❌
+
+5) Write a program that computes the average of a series of positive integers entered by the user.
+   - The number of inputs is unknown
+   - The user stops input with -1 (sentinel value)
+   - The value -1 is NOT included in the average
+
+6) Write a program that displays all strictly positive integers whose square is less than a given integer n.
+   - Example: If the user enters 20, output: 1 2 3 4
+
+7) Write a program that displays the last value entered (excluding -1).
+
+8) Compare the first and last element (before -1) and display one of the following messages:
+   "The first is less than the last"
+   "The first is equal to the last"
+   "The first is greater than the last"
+   "The sequence is empty"
+
+9) Write a program that determines whether the sequence is strictly increasing.
+   👉 Do you need to wait for the sentinel (-1), or can you sometimes determine the answer earlier?
