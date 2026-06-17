@@ -1,0 +1,7 @@
+1) What do the programs do (see "Do While - Instructions in French.pdf)? Analyze the situations in which the user enters the values:
+    a = 5,  b = 2
+    a = 5,  b = -2
+    a = 5,  b = 0
+    a = -5, b = 0
+
+2) Redo exercises 3, 5, and 7 from the section on the while loop, using only the do-while loop.
