@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex_7 {
+public class ex_8 {
     public static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -20,7 +20,21 @@ public class ex_7 {
     private static int powerOfB(int b, int exp) {
         int res = 1;
         for (int i = 0; i < exp; ++i) {
-            res *= b;
+            res = product(b, res);
+        }
+        return res;
+    }
+
+    private static int product(int n1, int n2) {
+        int res = 0;
+
+        if (n2 < 0) {
+            n2 = -n2;
+            n1 = -n1;
+        }
+
+        for (int i = 0; i < n2; ++i) {
+            res += n1;
         }
         return res;
     }

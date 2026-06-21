@@ -25,9 +25,9 @@ public class Exercice_11 {
     public static boolean estPremier(int n) {
         boolean result;
         if (n == 1) 
-            result = false;
+            result = false; // 1 is not a prime number
         else if (n % 2 == 0) 
-            result = n == 2;
+            result = n == 2; // 2 is the lone even number that is also a prime one
         else {
             int candidat = 3;
             while (candidat * candidat <= n && !estMultipleDe(n, candidat)) {
