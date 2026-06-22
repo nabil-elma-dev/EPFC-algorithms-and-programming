@@ -1,20 +1,27 @@
 import java.util.Scanner;
 
-public class ex_11 {
+public class ex_12 {
     public static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("This program determines whether a number is a prime one");
-        System.out.print("Enter a number: ");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("This program determines how many prime numbers there are before n");
+        System.out.print("Enter a positive number : ");
         int n = scan.nextInt();
-        if (isPrime(n)) {
-            System.out.println("Ce nombre est premier");
-        } else {
-            System.out.println("Ce nombre n'est pas premier");
-        }
+        System.out.println("Prime numbers before " + n + ": " + primeNumbersBefore(n));
     }
 
-    public static boolean isPrime(int n) {
+    public static int primeNumbersBefore(int n) {
+        int cpt = 0;
+        for (int p = 2; p < n; ++p) {
+            if (isPrimeNumber(p)) {
+                ++cpt;
+            }
+        }
+        return cpt;
+    }
+
+    public static boolean isPrimeNumber(int n) {
         // Negative numbers, 0 and 1
         if (n < 2) {
             return false;
@@ -47,7 +54,19 @@ public class ex_11 {
         return true;
     }
 
-    private static boolean isMultiple(int n1, int n2) {
+    public static boolean isMultiple(int n1, int n2) {
         return n1 % n2 == 0;
     }
+
+    //    // Renvoie true ssi n est premier
+//    public static boolean estPremier(int n) {
+//        int candidatDiviseur = 2;
+//        while (candidatDiviseur < n && !estMultipleDe(n, candidatDiviseur)) {
+//            ++candidatDiviseur;
+//        }
+//        return candidatDiviseur == n;
+//    }
+    // Solution (légèrement) plus rapide
+    // Renvoie true ssi n est premier
+
 }
