@@ -15,6 +15,7 @@ public class Sequences_ex16 {
     public static SeqInt deuxMax(SeqInt s) {
         SeqIntIterator it = s.iterator();
         SeqInt result = new SeqInt();
+
         if (it.hasNext()) {
             int x = it.next();          // Premier élément
             if (it.hasNext()) {
