@@ -7,7 +7,10 @@ public class ex_13 {
     public static void main(String[] args) {
         System.out.println("This program determines how many times the maximum appeared in a sequence");
         SeqInt s = new SeqInt(9,2,8,9,5,9,1);
-        System.out.println("Number of apparitions of max: " + nbMax(s));
+        System.out.println("Number of apparitions of max in the sequence : " + s + ": " + nbMax(s));
+        SeqInt s0 = new SeqInt();
+        System.out.println("Number of apparitions of max in the sequence : " + s0 + ": " + nbMax(s0));
+        System.out.println();
     }
 
     public static int nbMax(SeqInt s) {
