@@ -60,7 +60,6 @@ public class ex_16 {
                 res = new SeqInt(maxFirst, maxSecond);
             }
         }
-
         return res;
     }
 }
