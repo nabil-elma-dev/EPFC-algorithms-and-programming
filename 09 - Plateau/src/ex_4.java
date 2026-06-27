@@ -6,9 +6,9 @@ current         2   2   2   1   1   9   4   4   4   4   5   5   8   8   8
 previous        /   2   2   2   1   1   9   4   4   4   4   5   5   8   8
 
 lgPlat          1   2   3   1   2   1   1   2   3   4   1   2   1   2   3
-nbPlat3orMore   0   0   1   1   1   1   1   1   2   2   2   2   2   2   3
-
+equals3         0   0   1   1   1   1   1   1   2   1   1   1   1   1   2
 */
+
 public class ex_4 {
     public static SeqIntIterator it;
     public static void main() {
