@@ -16,6 +16,7 @@ public class ex_11 {
     public static void main() {
         System.out.println("This program prints the number of plateau of max height and length > 1");
         SeqInt p = new SeqInt(7, 7, 6, 8, 3, 3, 5, 6, 8, 8);
+        System.out.println("Sequence: " + p);
         System.out.println("number of plateau of max height and length > 1: " + maxHeightAndLengthMoreThan1(p));
     }
 
