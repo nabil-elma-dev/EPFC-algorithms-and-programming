@@ -31,7 +31,7 @@ public class ex_16 {
             System.out.println("Unable to perform calculus, empty sequence");
         } else {
             System.out.println(
-                    (h == 0 ?
+                    (posLastHeightH(p, h) == 0 ?
                             h + " has not been found"
                             : "Last plateau of height " + h + " is on position " + posLastHeightH(p, h))
             );

@@ -10,7 +10,7 @@ public class ex_17 {
     previous    /   2   3   3   5   9   9   2   3   3   3
 
     currentLg   1   1   2   1   1   2   1   1   2   3   1
-    lgLastH     0   2   2   2   2   2   2   1   2   3   3   (h == 3)
+    lgLastH     0   1   2   2   2   2   2   1   2   3   3   (h == 3)
     */
 
     public static SeqIntIterator it;
