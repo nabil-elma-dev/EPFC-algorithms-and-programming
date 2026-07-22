@@ -18,7 +18,7 @@ public class ex_21 {
 
     public static void main() {
         System.out.println("This program prints the length of longest plateau of max height");
-        SeqInt p = new SeqInt(2,2,4,4,5,7,7,3,1,1,1,7);
+        SeqInt p = new SeqInt(2, 2, 2, 2, 1, 2, 7, 7, 7, 2, 2, 2, 7, 3, 3, 7, 7, 1);
         System.out.println(p);
         System.out.println("the length of the longest plateau of max height is " + lgMaxOfMaxHeight(p));
     }
