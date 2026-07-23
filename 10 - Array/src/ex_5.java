@@ -2,7 +2,7 @@ import eu.epfc.prm3.Array;
 
 import java.util.Scanner;
 
-public class ex_4 {
+public class ex_5 {
     public static Scanner scan = new Scanner(System.in);
     public static void main() {
         Array<Integer> tab = new Array<>(2,7,6,8,8,5,3,8);
@@ -13,20 +13,20 @@ public class ex_4 {
     }
 
     public static void print(Array<Integer> tab, int n) {
-        if (firstAppearence(tab, n) == tab.size()) {
+        if (lastAppearence(tab, n) == tab.size()) {
             System.out.println("Number" + n + " has not been found.");
         } else {
-            System.out.println("Number " + n + " appears for the first time at position number " + firstAppearence(tab, n));
+            System.out.println("Number " + n + " appears for the last time at position number " + lastAppearence(tab, n));
         }
     }
 
-    public static int firstAppearence(Array<Integer> tab, int target) {
+    public static int lastAppearence(Array<Integer> tab, int target) {
         int pos = tab.size();
-        int step = 0;
-        while (step < tab.size() && target != tab.get(step)){
-            ++step;
+        for (int i = 0; i < tab.size(); ++i) {
+            if (tab.get(i) == target) {
+                pos = i;
+            }
         }
-        pos = step;
         return pos;
     }
 }
