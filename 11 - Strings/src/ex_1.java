@@ -8,8 +8,8 @@ public class ex_1 {
         for (Character c : tab) {
             System.out.println(
                     c + (isLowerCase(c) ?
-                            " est une lettre minuscule"
-                            : " n'est pas une lettre minuscule")
+                            " is a lowercase letter"
+                            : " is not a lowercase letter")
             );
         }
     }
