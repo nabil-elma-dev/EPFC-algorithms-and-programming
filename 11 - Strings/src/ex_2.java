@@ -13,6 +13,11 @@ public class ex_2 {
     }
 
     public static Character lowerToUpper(Character c) {
-        return (char)((int)c - 32) ;
+        if (ex_1.isLowerCase(c)) {
+            return (char)((int)c - 32) ;
+        } else {
+            return c;
+        }
+
     }
 }
