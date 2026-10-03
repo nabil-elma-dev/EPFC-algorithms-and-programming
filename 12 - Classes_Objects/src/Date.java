@@ -1,3 +1,3 @@
 public class Date {
-    public int jour, mois, annee;
+    public int day, month, year;
 }
