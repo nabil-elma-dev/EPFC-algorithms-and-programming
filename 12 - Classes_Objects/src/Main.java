@@ -5,15 +5,6 @@ public class Main {
 
     // Main
     public static void main() {
-        // Dates
-//        Date d1 = new Date();
-//        Date d2 = new Date();
-//
-//        saisie(d1);
-//        saisie(d2);
-//        affiche(d1);
-//        affiche(d2);
-//        System.out.println(compare(d1, d2));
 
         // People
         Person p1 = new Person();
@@ -22,7 +13,7 @@ public class Main {
         saisie(p2);
         affiche(p1);
         affiche(p2);
-        printMessageAge(compare(p1.birthDate, p2.birthDate), p1, p2);
+        printMessageAge(p1, p2);
     }
 
     // Date and Person builders
@@ -66,16 +57,24 @@ public class Main {
         return compare(p1.birthDate, p2.birthDate);
     }
 
-//    public static int compareNomPrenom(Person p1, Person p2) {
-//
-//    }
+    public static int compareNames(Person p1, Person p2) {
+        return p1.firstName.compareToIgnoreCase(p2.firstName) != 0 ?
+            p1.firstName.compareToIgnoreCase(p2.firstName)
+            : p1.lastName.compareToIgnoreCase(p2.lastName);
+    }
 
-    public static void printMessageAge(int n, Person p1, Person p2) {
-        System.out.println( n > 0 ?
+    public static void printMessageAge(Person p1, Person p2) {
+        System.out.println( compareAge(p1,p2) > 0 ?
                 p1.firstName + " " + p1.lastName + " is younger than " + p2.firstName + " " + p2.lastName
-                : n < 0 ?
+                : compareAge(p1, p2) < 0 ?
                     p1.firstName + " " + p1.lastName + " is older than " + p2.firstName + " " + p2.lastName
                     : p1.firstName + " " + p1.lastName + " and " + p2.firstName + " " + p2.lastName + " have the same age"
+        );
+        System.out.println( compareNames(p1, p2) > 0 ?
+                p1.firstName + " " + p1.lastName + " comes (lexicographically) after " + p2.firstName + " " + p2.lastName
+                : compareNames(p1, p2) < 0 ?
+                    p1.firstName + " " + p1.lastName + " comes (lexicographically) before " + p2.firstName + " " + p2.lastName
+                    : p1.firstName + " " + p1.lastName + " and " + p2.firstName + " " + p2.lastName + " are two identical strings."
         );
 
     }
