@@ -22,6 +22,7 @@ public class Main {
         saisie(p2);
         affiche(p1);
         affiche(p2);
+        printMessageAge(compare(p1.birthDate, p2.birthDate), p1, p2);
     }
 
     // Date and Person builders
@@ -61,11 +62,21 @@ public class Main {
         return (d1.year * 10000 + d1.month * 100 + d1.day) - (d2.year * 10000 + d2.month * 100 + d2.day);
     }
 
-//    public static int compareAge(Person p1, Person p2) {
-//
-//    }
-//
+    public static int compareAge(Person p1, Person p2) {
+        return compare(p1.birthDate, p2.birthDate);
+    }
+
 //    public static int compareNomPrenom(Person p1, Person p2) {
 //
 //    }
+
+    public static void printMessageAge(int n, Person p1, Person p2) {
+        System.out.println( n > 0 ?
+                p1.firstName + " " + p1.lastName + " is younger than " + p2.firstName + " " + p2.lastName
+                : n < 0 ?
+                    p1.firstName + " " + p1.lastName + " is older than " + p2.firstName + " " + p2.lastName
+                    : p1.firstName + " " + p1.lastName + " and " + p2.firstName + " " + p2.lastName + " have the same age"
+        );
+
+    }
 }
