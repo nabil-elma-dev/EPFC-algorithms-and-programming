@@ -1,3 +1,5 @@
+import eu.epfc.prm3.Array;
+
 import java.util.Scanner;
 
 public class Main {
@@ -5,7 +7,8 @@ public class Main {
 
     // Main
     public static void main() {
-        exercice1();
+        // exercice1();
+        exercice2();
     }
 
     // Exercices
@@ -17,6 +20,18 @@ public class Main {
         affiche(p1);
         affiche(p2);
         printMessageAge(p1, p2);
+    }
+
+    public static void exercice2() {
+        System.out.print("Nb people: ");
+        int qty = Integer.parseInt(s.nextLine());
+        Array<Person> people = new Array<>();
+        for (int cpt = 0; cpt < qty; ++ cpt) {
+            Person p = new Person();
+            saisie(p);
+            // todo : compare with pre-existing people
+            people.add(p);
+        }
     }
 
     // Date and Person builders
