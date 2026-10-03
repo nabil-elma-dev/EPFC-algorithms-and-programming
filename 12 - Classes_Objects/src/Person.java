@@ -1,4 +1,4 @@
 public class Person {
-    public String lastName, firstName;
+    public String firstName, lastName;
     public Date birthDate;
 }

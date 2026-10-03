@@ -6,33 +6,44 @@ public class Main {
     // Main
     public static void main() {
         // Dates
-        Date d1 = new Date();
-        Date d2 = new Date();
-
-        saisie(d1);
-        saisie(d2);
-        affiche(d1);
-        affiche(d2);
-        System.out.println(compare(d1, d2));
+//        Date d1 = new Date();
+//        Date d2 = new Date();
+//
+//        saisie(d1);
+//        saisie(d2);
+//        affiche(d1);
+//        affiche(d2);
+//        System.out.println(compare(d1, d2));
 
         // People
         Person p1 = new Person();
         Person p2 = new Person();
+        saisie(p1);
+        saisie(p2);
+        affiche(p1);
+        affiche(p2);
     }
 
     // Date and Person builders
     public static void saisie(Date d) {
         System.out.println("Enter a date.");
         System.out.print("Day: ");
-        d.day = s.nextInt();
+        d.day =  Integer.parseInt(s.nextLine());
         System.out.print("Month: ");
-        d.month = s.nextInt();
+        d.month = Integer.parseInt(s.nextLine());
         System.out.print("Year: ");
-        d.year = s.nextInt();
+        d.year = Integer.parseInt(s.nextLine());
     }
 
     public static void saisie(Person p) {
-
+        System.out.println("Enter your name");
+        System.out.print("First name: ");
+        p.firstName = s.nextLine();
+        System.out.print("Last name: ");
+        p.lastName = s.nextLine(); // (!) compound names might trigger a InputMismatchException if saisie(Date) with nextInt
+        p.birthDate = new Date();
+        System.out.print("Birth day: ");
+        saisie(p.birthDate);
     }
 
     // Date and Person printers
@@ -41,7 +52,8 @@ public class Main {
     }
 
     public static void affiche(Person p) {
-
+        System.out.print(p.firstName + " " + p.lastName + "; Birth date: ");
+        affiche(p.birthDate);
     }
 
     // Date and Person comparators
