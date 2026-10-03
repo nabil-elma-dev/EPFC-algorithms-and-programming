@@ -5,8 +5,11 @@ public class Main {
 
     // Main
     public static void main() {
+        exercice1();
+    }
 
-        // People
+    // Exercices
+    public static void exercice1() {
         Person p1 = new Person();
         Person p2 = new Person();
         saisie(p1);
