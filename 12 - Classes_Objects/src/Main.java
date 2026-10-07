@@ -29,15 +29,7 @@ public class Main {
         for (int cpt = 0; cpt < qty; ++ cpt) {
             Person p = new Person();
             saisie(p);
-            int pos = 0;
-            while (pos < people.size() || compareNames(p, people.get(pos)) > 0) {
-                ++pos;
-            }
-            if (pos == people.size()) {
-                people.add(p);
-            } else {
-
-            }
+            people.add(p);
         }
         for (Person p : people) {
             affiche(p);
