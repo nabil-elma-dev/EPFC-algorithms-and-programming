@@ -8,8 +8,8 @@ public class Main {
     // Main
     public static void main() {
         // exercise1();
-        exercise2();
-        // exercise3();
+        // exercise2();
+        exercise3();
     }
 
     // Exercises
@@ -24,18 +24,17 @@ public class Main {
     }
 
     public static void exercise2() {
-        System.out.print("Nb people: ");
-        int qty = Integer.parseInt(s.nextLine());
-        Array<Person> people = buildPeopleArray(qty);
+        Array<Person> people = buildPeopleArray();
         for (Person p : people) {
             affiche(p);
         }
     }
 
     public static void  exercise3() {
+        Array<Person> people = buildPeopleArray();
+        Person youngest = findYoungest(people);
+        System.out.print("The youngest person is " + youngest.firstName + " " + youngest.lastName);
     }
-
-
 
     // Date and Person builders
     public static void saisie(Date d) {
@@ -100,7 +99,9 @@ public class Main {
 
     }
 
-    public static Array<Person> buildPeopleArray(int qty) {
+    public static Array<Person> buildPeopleArray() {
+        System.out.print("Nb people: ");
+        int qty = Integer.parseInt(s.nextLine());
         Array<Person> people = new Array<>();
         for (int cpt = 0; cpt < qty; ++ cpt) {
             Person p = new Person();
@@ -108,5 +109,19 @@ public class Main {
             people.add(p);
         }
         return people;
+    }
+
+    public static Person findYoungest(Array<Person> people) {
+        if (people.isEmpty()) {
+            throw new RuntimeException("Error: empty collection!");
+        }
+
+        Person youngest = people.get(0);
+        for (int i = 1; i < people.size(); ++i) {
+            youngest = compareAge(youngest, people.get(i)) <= 0 ?
+                    people.get(i)
+                    : youngest;
+        }
+        return youngest;
     }
 }
