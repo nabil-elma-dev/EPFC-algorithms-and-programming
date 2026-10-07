@@ -7,12 +7,13 @@ public class Main {
 
     // Main
     public static void main() {
-        // exercice1();
-        exercice2();
+        // exercise1();
+        exercise2();
+        // exercise3();
     }
 
-    // Exercices
-    public static void exercice1() {
+    // Exercises
+    public static void exercise1() {
         Person p1 = new Person();
         Person p2 = new Person();
         saisie(p1);
@@ -22,19 +23,19 @@ public class Main {
         printMessageAge(p1, p2);
     }
 
-    public static void exercice2() {
+    public static void exercise2() {
         System.out.print("Nb people: ");
         int qty = Integer.parseInt(s.nextLine());
-        Array<Person> people = new Array<>();
-        for (int cpt = 0; cpt < qty; ++ cpt) {
-            Person p = new Person();
-            saisie(p);
-            people.add(p);
-        }
+        Array<Person> people = buildPeopleArray(qty);
         for (Person p : people) {
             affiche(p);
         }
     }
+
+    public static void  exercise3() {
+    }
+
+
 
     // Date and Person builders
     public static void saisie(Date d) {
@@ -97,5 +98,15 @@ public class Main {
                     : p1.firstName + " " + p1.lastName + " and " + p2.firstName + " " + p2.lastName + " are two identical strings."
         );
 
+    }
+
+    public static Array<Person> buildPeopleArray(int qty) {
+        Array<Person> people = new Array<>();
+        for (int cpt = 0; cpt < qty; ++ cpt) {
+            Person p = new Person();
+            saisie(p);
+            people.add(p);
+        }
+        return people;
     }
 }
