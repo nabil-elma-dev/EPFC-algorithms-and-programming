@@ -29,8 +29,18 @@ public class Main {
         for (int cpt = 0; cpt < qty; ++ cpt) {
             Person p = new Person();
             saisie(p);
-            // todo : compare with pre-existing people
-            people.add(p);
+            int pos = 0;
+            while (pos < people.size() || compareNames(p, people.get(pos)) > 0) {
+                ++pos;
+            }
+            if (pos == people.size()) {
+                people.add(p);
+            } else {
+
+            }
+        }
+        for (Person p : people) {
+            affiche(p);
         }
     }
 
