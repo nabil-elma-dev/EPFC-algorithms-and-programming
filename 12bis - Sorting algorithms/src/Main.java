@@ -7,14 +7,8 @@ public class Main {
     public static Scanner s = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Array<Person> people = buildPeopleArray();
-        System.out.println("Collection before sorting: ");
-        affiche(people);
-        // sortPeopleSelection(people);
-        // sortPeopleInsertion(people);
-        sortPeopleBubble(people);
-        System.out.println();
-        System.out.println("Collection after sorting: ");
+        Array<Person> people = buildAndSortPeopleArray();
+        System.out.println("Collection: ");
         affiche(people);
     }
 
@@ -28,6 +22,29 @@ public class Main {
             people.add(p);
         }
         return people;
+    }
+
+    // Exercise 2
+    public static Array<Person> buildAndSortPeopleArray() {
+        System.out.print("Nb people: ");
+        int qty = Integer.parseInt(s.nextLine());
+        Array<Person> people = new Array<>();
+        for (int i = 0; i < qty; ++i) {
+            Person p = new Person();
+            saisie(p);
+            sortArrayMidStep(people, p);
+        }
+        return people;
+    }
+
+    public static void sortArrayMidStep(Array<Person> people, Person newPerson) {
+        people.add(null);
+        int posTarget = people.size() - 1;
+        while (posTarget > 0 && compareNames(newPerson, people.get(posTarget - 1)) < 0) {
+            people.set(posTarget, people.get(posTarget - 1));
+            --posTarget;
+        }
+        people.set(posTarget, newPerson);
     }
 
     // Date and Person builders
