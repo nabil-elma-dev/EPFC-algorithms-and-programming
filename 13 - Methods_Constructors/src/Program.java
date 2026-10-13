@@ -1,5 +1,7 @@
 import eu.epfc.prm3.Array;
 
+import java.security.PublicKey;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Program {
@@ -9,7 +11,9 @@ public class Program {
         // exercise_1();
         // exercise_2();
         // exercise_3();
-        exercise_4();
+        // exercise_4();
+        // exercise_5();
+        exercise_6();
     }
 
     public static void exercise_1() {
@@ -46,6 +50,18 @@ public class Program {
     public static void exercise_4() {
         Person p = new Person("Nabil", "El Mahfoudi", 1, 5, 1998);
         p.affiche();
+    }
+
+    public static void exercise_5() {
+        Person p = new Person("Nabil", "El Mahfoudi", 1, 5, 1998);
+        System.out.println(p);
+    }
+
+    public static void exercise_6() {
+        Person p = new Person("Nabil", "El Mahfoudi", 1, 5, 1998);
+        Person p2 = new Person("Big", "Benji", Person.CURRENT_DAY_OF_MONTH + 1, Person.CURRENT_MONTH, 1998);
+        System.out.println("Age of " + p.firstName + " " + p.lastName + ": " + p.getAge());
+        System.out.println("Age of " + p2.firstName + " " + p2.lastName + ": " + p2.getAge());
     }
 
     public static void saisie(Array<Person> people) {

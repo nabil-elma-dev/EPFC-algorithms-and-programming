@@ -30,4 +30,9 @@ public class Date {
         return (this.year * 10000 + this.month * 100 + this.day)
                 - (other.year * 10000 + other.month * 100 + other.day);
     }
+
+    @Override
+    public String toString() {
+        return this.day + "-" + this.month + "-" + this.year;
+    }
 }

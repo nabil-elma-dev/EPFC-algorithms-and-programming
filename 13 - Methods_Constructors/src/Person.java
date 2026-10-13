@@ -1,6 +1,11 @@
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Person {
+    public static final LocalDate CURRENT_DATE = LocalDate.now();
+    public static final int CURRENT_YEAR = CURRENT_DATE.getYear();
+    public static final int CURRENT_DAY_OF_MONTH = CURRENT_DATE.getDayOfMonth();
+    public static final int CURRENT_MONTH = CURRENT_DATE.getMonthValue();
     public static Scanner s = new Scanner(System.in);
 
     public String firstName, lastName;
@@ -38,5 +43,16 @@ public class Person {
         return this.firstName.compareToIgnoreCase(other.firstName) == 0 ?
                 this.lastName.compareToIgnoreCase(other.lastName)
                 : this.firstName.compareToIgnoreCase(other.firstName);
+    }
+
+    public int getAge() {
+        return CURRENT_MONTH < this.ddn.month
+                || CURRENT_MONTH == this.ddn.month && CURRENT_DAY_OF_MONTH < this.ddn.day ?
+                CURRENT_YEAR - this.ddn.year - 1
+                : CURRENT_YEAR - this.ddn.year;
+    }
+
+    public String toString() {
+        return this.firstName + " " + this.lastName + "; Date of birth: " + ddn.toString();
     }
 }
