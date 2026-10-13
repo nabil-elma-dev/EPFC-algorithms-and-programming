@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Program {
     public static Scanner s = new Scanner(System.in);
+
     public static void main(String[] args) {
         // exercise_1();
-        exercise_2();
+        // exercise_2();
+        exercise_3();
     }
 
     public static void exercise_1() {
@@ -31,6 +33,15 @@ public class Program {
         affiche(people);
     }
 
+    public static void exercise_3() {
+        Array<Person> people = new Array<>();
+        saisie(people);
+
+        System.out.print("The youngest person found is -> ");
+        Person youngest = findYoungest(people);
+        youngest.affiche();
+    }
+
     public static void saisie(Array<Person> people) {
         System.out.print("Nb. People: ");
         int qty = s.nextInt();
@@ -46,5 +57,18 @@ public class Program {
         for (Person p : people) {
             p.affiche();
         }
+    }
+
+    public static Person findYoungest(Array<Person> people) {
+        if (people.isEmpty()) {
+            throw new RuntimeException("Attention! Empty collection!");
+        }
+        Person youngest = people.get(0);
+        for (int i = 1; i < people.size(); ++i) {
+            if (youngest.compareToAge(people.get(i)) > 0) {
+                youngest = people.get(i);
+            }
+        }
+        return youngest;
     }
 }

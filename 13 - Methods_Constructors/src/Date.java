@@ -4,6 +4,14 @@ public class Date {
     public static Scanner s = new Scanner(System.in);
     public int day, month, year;
 
+    public Date(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    public Date() {}
+    
     public void saisie() {
         System.out.println("Enter a date: ");
         System.out.print("Day: ");
