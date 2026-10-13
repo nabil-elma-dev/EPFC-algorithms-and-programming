@@ -6,6 +6,14 @@ public class Person {
     public String firstName, lastName;
     public Date ddn;
 
+    public Person(String firstName, String lastName, int day, int month, int year) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ddn = new Date(day, month, year);
+    }
+
+    public Person() {}
+
     public void saisie() {
         System.out.println("Enter new person's data.");
         System.out.print("First name: ");

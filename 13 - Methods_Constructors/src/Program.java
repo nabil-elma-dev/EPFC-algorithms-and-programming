@@ -8,7 +8,8 @@ public class Program {
     public static void main(String[] args) {
         // exercise_1();
         // exercise_2();
-        exercise_3();
+        // exercise_3();
+        exercise_4();
     }
 
     public static void exercise_1() {
@@ -40,6 +41,11 @@ public class Program {
         System.out.print("The youngest person found is -> ");
         Person youngest = findYoungest(people);
         youngest.affiche();
+    }
+
+    public static void exercise_4() {
+        Person p = new Person("Nabil", "El Mahfoudi", 1, 5, 1998);
+        p.affiche();
     }
 
     public static void saisie(Array<Person> people) {

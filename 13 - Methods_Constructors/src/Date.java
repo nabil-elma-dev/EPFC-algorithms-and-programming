@@ -11,7 +11,7 @@ public class Date {
     }
 
     public Date() {}
-    
+
     public void saisie() {
         System.out.println("Enter a date: ");
         System.out.print("Day: ");
@@ -27,6 +27,7 @@ public class Date {
     }
 
     public int compareTo(Date other) {
-        return (this.year * 10000 + this.month * 100 + this.day) - (other.year * 10000 + other.month * 100 + other.day);
+        return (this.year * 10000 + this.month * 100 + this.day)
+                - (other.year * 10000 + other.month * 100 + other.day);
     }
 }
