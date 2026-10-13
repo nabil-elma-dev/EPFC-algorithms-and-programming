@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01 - Assignments Operators/01 - Assignments Operators.iml" filepath="$PROJECT_DIR$/01 - Assignments Operators/01 - Assignments Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01 - Assignments operators/01 - Assignments operators.iml" filepath="$PROJECT_DIR$/01 - Assignments operators/01 - Assignments operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 - Conditional Statements/02 - Conditional Statements.iml" filepath="$PROJECT_DIR$/02 - Conditional Statements/02 - Conditional Statements.iml" />
       <module fileurl="file://$PROJECT_DIR$/02 - Conditional statements/02 - Conditional statements.iml" filepath="$PROJECT_DIR$/02 - Conditional statements/02 - Conditional statements.iml" />
       <module fileurl="file://$PROJECT_DIR$/03 - While loop/03 - While loop.iml" filepath="$PROJECT_DIR$/03 - While loop/03 - While loop.iml" />
       <module fileurl="file://$PROJECT_DIR$/04 - For loop/04 - For loop.iml" filepath="$PROJECT_DIR$/04 - For loop/04 - For loop.iml" />
