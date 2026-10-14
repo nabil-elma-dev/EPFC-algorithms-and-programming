@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="prm2_14_recap_solutions">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Array.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SeqInt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
