@@ -14,8 +14,18 @@ public class CountryMedals {
         this.medals += 1;
     }
 
-    public int compareMedals(CountryMedals other) {
+    private int compareMedals(CountryMedals other) {
         return this.medals - other.medals;
+    }
+
+    private int compareCountries(CountryMedals other) {
+        return -this.country.compareToIgnoreCase(other.country);
+    }
+
+    public int compareFull(CountryMedals other) {
+        return compareMedals(other) == 0 ?
+                compareCountries(other)
+                : compareMedals(other);
     }
 
     @Override

@@ -34,11 +34,12 @@ public class Program {
         } else {
             countriesMedals.get(pos).incrementMedals();
         }
-            while (pos > 0 && countriesMedals.get(pos).compareMedals(countriesMedals.get(pos - 1)) > 0) {
-                CountryMedals tmp = countriesMedals.get(pos - 1);
-                countriesMedals.set(pos - 1, countriesMedals.get(pos));
-                countriesMedals.set(pos, tmp);
-            }
+        while (pos > 0 && countriesMedals.get(pos).compareFull(countriesMedals.get(pos - 1)) > 0) {
+            CountryMedals tmp = countriesMedals.get(pos - 1);
+            countriesMedals.set(pos - 1, countriesMedals.get(pos));
+            countriesMedals.set(pos, tmp);
+            --pos;
+        }
     }
 
     public static void print(Array<CountryMedals> medailles) {
