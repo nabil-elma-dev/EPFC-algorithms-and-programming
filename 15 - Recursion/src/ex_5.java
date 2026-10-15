@@ -18,18 +18,28 @@ public class ex_5 {
             System.out.print("Enter an exponent: ");
             exp = s.nextInt();
         }
-        System.out.println(n + "^" + exp + " equals " + powerOf(n, exp));
+        System.out.println(n + "^" + exp + " equals " + powerOfFaster(n, exp));
     }
 
-    public static int powerOf(int n, int exp) {
+    public static int powerOfFaster(int n, int exp) {
         if (exp == 0) {
             return 1;
         } else if (exp == 1) {
             return n;
         } else {
             return exp % 2 == 0 ?
-                    powerOf(n, exp/2) * powerOf(n, exp/2)
-                    : n * powerOf(n, exp/2) * powerOf(n, exp/2);
+                    powerOfFaster(n, exp/2) * powerOfFaster(n, exp/2)
+                    : n * powerOfFaster(n, exp/2) * powerOfFaster(n, exp/2);
+        }
+    }
+
+    public static int profPowerOfFaster(int n, int exp) {
+        if (n == 0) {
+            return 1;
+        } else if (n % 2 == 0) {
+            return powerOfFaster(n * n, exp / 2);
+        } else {
+            return n * (powerOfFaster(n, exp - 1));
         }
     }
 }

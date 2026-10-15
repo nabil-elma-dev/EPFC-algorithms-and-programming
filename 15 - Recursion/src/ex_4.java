@@ -29,11 +29,11 @@ public class ex_4 {
 
     }
 
-    public static int powerOfBetter(int n, int exp) {
+    public static int profPowerOf(int n, int exp) {
         return incrementalPower(n, exp, 1);
     }
 
-    private static int incrementalPower(int n, int exp, int result) {
+    public static int incrementalPower(int n, int exp, int result) {
         if (n == 0)
             return result;
         return incrementalPower(n, exp - 1, n * result);
