@@ -8,7 +8,7 @@ public class ex_10 {
         int n = s.nextInt();
         while (n < 0) {
             System.out.println("Enter a positive number!");
-            System.out.print("Enter a base: ");
+            System.out.print("Enter a number: ");
             n = s.nextInt();
         }
         System.out.println("Number of 2 inside " + n + " is equal to " + nbOfTwo(n)); // 3
