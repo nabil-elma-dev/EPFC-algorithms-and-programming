@@ -15,7 +15,7 @@ public class ex_6 {
         System.out.println(n + " has the following number of digits: " + numberOfDigits(n));
     }
 
-    private static int numberOfDigits(int n) {
+    public static int numberOfDigits(int n) {
         return  (n >= 10) ?
             1 + numberOfDigits(n/10)
             : 1 ;
