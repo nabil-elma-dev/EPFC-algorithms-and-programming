@@ -34,12 +34,12 @@ public class ex_5 {
     }
 
     public static int profPowerOfFaster(int n, int exp) {
-        if (n == 0) {
+        if (exp == 0) {
             return 1;
-        } else if (n % 2 == 0) {
-            return powerOfFaster(n * n, exp / 2);
+        } else if (exp % 2 == 0) {
+            return profPowerOfFaster(n * n, exp / 2);
         } else {
-            return n * (powerOfFaster(n, exp - 1));
+            return n * (profPowerOfFaster(n, exp - 1));
         }
     }
 }
