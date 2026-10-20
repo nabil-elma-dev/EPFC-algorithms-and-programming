@@ -9,7 +9,7 @@ public class ex_13 {
         String copy = "";
         for (int i = 0; i < s.length(); ++i) {
             if (i == 0 || s.charAt(i - 1) == ' ') {
-                copy += ex_2.lowerToUpper(s.charAt(i));
+                copy += ex_02.lowerToUpper(s.charAt(i));
             } else {
                 copy += s.charAt(i);
             }

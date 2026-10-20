@@ -28,10 +28,10 @@ public class ex_16 {
         int maxValue = 0;
         for (char c : s.toCharArray()) {
             if (pos == 0) {
-                maxValue = (int) ex_2.lowerToUpper(s.charAt(pos));
+                maxValue = (int) ex_02.lowerToUpper(s.charAt(pos));
             } else {
-                if ((int) ex_2.lowerToUpper(s.charAt(pos)) > maxValue) {
-                    maxValue = (int) ex_2.lowerToUpper(s.charAt(pos));
+                if ((int) ex_02.lowerToUpper(s.charAt(pos)) > maxValue) {
+                    maxValue = (int) ex_02.lowerToUpper(s.charAt(pos));
                 }
             }
             ++ pos;
@@ -46,7 +46,7 @@ public class ex_16 {
             if ((s.charAt(i) >= 65 && s.charAt(i) <= 90)
                     || (s.charAt(i) >= 97 && s.charAt(i) <= 122))
             {
-                char currentChar = ex_2.lowerToUpper(s.charAt(i));
+                char currentChar = ex_02.lowerToUpper(s.charAt(i));
                 res.set((int)(currentChar) - 65, res.get((int)(currentChar) - 65) + 1);
             }
         }

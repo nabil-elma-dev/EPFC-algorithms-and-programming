@@ -26,7 +26,7 @@ public class ex_13 {
                 }
             }
             for (int l = 0; l < nbTarget; ++l) {
-                ex_8.leftPermutation(tab);
+                ex_08.leftPermutation(tab);
             }
             tab.reduceTo(tab.size() - nbTarget);
             nbTarget = 0;

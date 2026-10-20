@@ -27,9 +27,9 @@ public class ex_14 {
 
     public static int conversionDigitsBinToDec(int n, int exp) {
         if (n == 0 || n == 1) {
-            return n * ex_5.profPowerOfFaster(2, exp);
+            return n * ex_05.profPowerOfFaster(2, exp);
         } else {
-            return n % 10 * ex_5.profPowerOfFaster(2, exp) + conversionDigitsBinToDec(n / 10, exp + 1);
+            return n % 10 * ex_05.profPowerOfFaster(2, exp) + conversionDigitsBinToDec(n / 10, exp + 1);
         }
     }
 }

@@ -15,7 +15,7 @@ public class ex_10 {
     }
 
     public static int nbOfTwo(int n) {
-        int nbDigits = ex_6.numberOfDigits(n);
+        int nbDigits = ex_06.numberOfDigits(n);
         if (n < 10) {
             return n == 2 ?
                 1
